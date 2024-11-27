@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Calculator Challenge</title>
+</head>
+
+<body>
+    <div class="pt-12 text-center">
+        <span id="num1-el"></span>
+        <span id="num2-el" class="pl-4"></span>
+        <br>
+    </div>
+    <div class="my-8 flex gap-4 mx-4 items-center justify-center">
+        <button onclick="add()" class="border-2 border-black px-4 py-1 text-xl font-semibold hover:border-4" >Add</button>
+        <button onclick="subtract()" class="border-2 border-black px-4 py-1 text-xl font-semibold hover:border-4">Subtract</button>
+        <button onclick="divide()" class="border-2 border-black px-4 py-1 text-xl font-semibold hover:border-4">Divide</button>
+        <button onclick="multiply()" class="border-2 border-black px-4 py-1 text-xl font-semibold hover:border-4">Multiply</button>
+    </div>
+    <div class="text-center">
+        <span id="result" class="text-xl font-bold">Result: </span>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
