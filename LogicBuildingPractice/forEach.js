@@ -1,4 +1,4 @@
-let arr = [1,2,3,4,5];
+// let arr = [1,2,3,4,5];
 // arr.forEach(function(val){
 //     console.log("Hello World " + val);
 // });
@@ -12,8 +12,17 @@ let arr = [1,2,3,4,5];
 
 //Sum of all the element of an array
 let sum=0;
+// arr.forEach(function(val){
+//    sum+=val;
+// })
+// console.log("Sum: " + sum);
+
+//Sum of all element of an array and skip if their type is string
+let arr= [1, 2, '3', 4];
 arr.forEach(function(val){
-   sum+=val;
-})
-console.log("Sum: " + sum);
+    if(typeof val === 'number'){
+        sum+=val;
+    }
+});
+console.log(sum);
 
